@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.auth.RegistrationFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/txt1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Global News"
+           android:gravity="center"
+           android:textSize="28sp"
+           android:layout_marginTop="50dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+       <EditText
+           android:id="@+id/registerName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30dp"
+           android:layout_marginTop="50dp"
+           android:layout_marginEnd="30dp"
+           android:layout_marginBottom="88dp"
+           android:hint="Enter Name"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/txt1"
+           android:importantForAutofill="no" />
+
+       <EditText
+           android:id="@+id/registerMobile"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="30dp"
+           android:layout_marginBottom="88dp"
+           android:hint="Enter Mobile"
+           android:inputType="number"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/registerName"
+           android:importantForAutofill="no" />
+
+       <EditText
+           android:id="@+id/registerEmail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="30dp"
+           android:layout_marginBottom="88dp"
+           android:hint="Enter Email"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/registerMobile"
+           android:importantForAutofill="no" />
+
+       <EditText
+           android:id="@+id/registerPassword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="30dp"
+           android:layout_marginBottom="88dp"
+           android:hint="Enter Password"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/registerEmail"
+           android:importantForAutofill="no" />
+
+       <EditText
+           android:id="@+id/registerAddress"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="30dp"
+           android:hint="Enter Adress"
+           android:importantForAutofill="no"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/registerPassword" />
+
+       <Button
+           android:id="@+id/registerBtn"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="120dp"
+           android:text="Register"
+           android:layout_marginTop="100dp"
+           android:background="@drawable/button_bg"
+           android:textColor="@color/white"
+           app:layout_constraintTop_toBottomOf="@id/registerAddress"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent" />
+       app:layout_constraintEnd_toEndOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

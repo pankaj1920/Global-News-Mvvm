@@ -1,0 +1,3 @@
+include ':app:adminglobalnews'
+include ':app'
+rootProject.name = "GlobalNewsMvvm"
