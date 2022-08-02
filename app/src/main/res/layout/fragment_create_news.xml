@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".global_news.views.fragment.dashboard.upload_news.CreateNewsFragment">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spNewsCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/bg_spinner"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlPictureUrl"
+        style="@style/BaseTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="@string/cover_picture_url"
+        app:layout_constraintEnd_toEndOf="@id/spNewsCategory"
+        app:layout_constraintStart_toStartOf="@id/spNewsCategory"
+        app:layout_constraintTop_toBottomOf="@id/spNewsCategory">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCoverPictureUrl"
+            style="@style/BaseTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlTitle"
+        style="@style/BaseTextInputLayout"
+        android:layout_width="0dp"
+        android:hint="@string/title"
+        app:layout_constraintEnd_toEndOf="@id/tlPictureUrl"
+        app:layout_constraintStart_toStartOf="@id/tlPictureUrl"
+        app:layout_constraintTop_toBottomOf="@id/tlPictureUrl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTitle"
+            style="@style/BaseTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlDescription"
+        style="@style/BaseTextInputLayout"
+        android:layout_width="0dp"
+        android:hint="@string/description"
+        app:layout_constraintEnd_toEndOf="@id/tlTitle"
+        app:layout_constraintStart_toStartOf="@id/tlTitle"
+        app:layout_constraintTop_toBottomOf="@id/tlTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescription"
+            style="@style/BaseTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:minHeight="@dimen/_100sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        style="@style/BaseButton"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@id/tlDescription"
+        app:layout_constraintStart_toStartOf="@id/tlDescription"
+        app:layout_constraintTop_toBottomOf="@id/tlDescription" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:text="@string/notify_to_all_user"
+        app:layout_constraintBottom_toTopOf="@id/btnSave"
+        app:layout_constraintStart_toStartOf="@id/btnSave" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Text.Basic"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_eye"
+        android:drawablePadding="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/preview"
+        android:textSize="@dimen/_12ssp"
+        app:drawableTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/cbNotify"
+        app:layout_constraintEnd_toEndOf="@id/btnSave"
+        app:layout_constraintTop_toTopOf="@id/cbNotify" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

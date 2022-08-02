@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">B2B</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="digits">1234567890</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot ?</string>
+    <string name="new_user">New User ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="proceed">Proceed</string>
+    <string name="mobile">Mobile</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="pancard">Pancard</string>
+    <string name="aadhaar_card">Aadhaar Card</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="slug">Slug</string>
+    <string name="total_user">Total User</string>
+    <string name="cover_picture_url">Cover Picture Url</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="notify_to_all_user">Notify to All User</string>
+    <string name="preview">Preview</string>
+    <string name="smaple_news">Box Office: \'Joker Close To Becoming DC\'s 2nd-Biggest Film\'</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="sample_date">01 February 2021</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="try_again">Try Again</string>
+    <string name="not_internet_connection">No Internet Connection</string>
+    <string name="please_wait">Please Wait ..</string>
+    <string name="loading">Loading..</string>
+    <string name="_admin">- Admin</string>
+    <string name="data_stat">Data stat</string>
+    <string name="upload_item">Upload Item</string>
+    <string name="all_data">All Data</string>
+</resources>

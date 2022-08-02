@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".global_news.views.fragment.dashboard.data_stats.AdminDataStatsFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDataStat"
+            tools:itemCount="2"
+            tools:listitem="@layout/inflate_data_stats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

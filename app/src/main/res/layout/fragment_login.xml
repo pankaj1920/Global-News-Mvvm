@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".global_news.views.fragment.authenticate.login.LoginFragment">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.payments.b2b.global_news.viewmodel.auth.LoginViewModel" />
+
+        <variable
+            name="clickListener"
+            type="com.payments.b2b.global_news.views.fragment.authenticate.login.LoginFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAppLogo"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:src="@drawable/img_app_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:alpha="0.9"
+            android:background="@drawable/bg_card_login"
+            app:layout_constraintTop_toBottomOf="@id/ivAppLogo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/viOne"
+                    android:layout_width="@dimen/_7sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="21.7dp"
+                    android:background="@drawable/bg_rounded_corner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLoginLabel"
+                    style="@style/Text.PoppinSemiBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="@string/login"
+                    android:textAllCaps="true"
+                    app:layout_constraintStart_toEndOf="@id/viOne"
+                    app:layout_constraintTop_toTopOf="@id/viOne" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUserName"
+                    style="@style/Text.Placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/email"
+                    app:layout_constraintStart_toStartOf="@id/tvLoginLabel"
+                    app:layout_constraintTop_toBottomOf="@id/tvLoginLabel" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etUserName"
+                    style="@style/EmailEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_27sdp"
+                    android:text="@={viewModel.loginRequestData.email,default=`psb@gmail.com`}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tvUserName"
+                    app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPassword"
+                    style="@style/Text.Placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/password"
+                    app:layout_constraintStart_toStartOf="@id/etUserName"
+                    app:layout_constraintTop_toBottomOf="@id/etUserName" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPassword"
+                    style="@style/PasswordEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_27sdp"
+                    android:text="@={viewModel.loginRequestData.password,default=`psb123`}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tvPassword"
+                    app:layout_constraintTop_toBottomOf="@id/tvPassword" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPass"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_password_off"
+                    app:layout_constraintBottom_toBottomOf="@id/etPassword"
+                    app:layout_constraintEnd_toEndOf="@id/etPassword"
+                    app:layout_constraintTop_toTopOf="@id/etPassword" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvForgotPass"
+                    style="@style/Text.Placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/forgot"
+                    android:textColor="@color/txt_blue"
+                    app:layout_constraintEnd_toEndOf="@id/etPassword"
+                    app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/bg_circle_arrow"
+                    android:onClick="@{clickListener::onLoginClicked}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/etPassword"
+                    app:layout_constraintStart_toStartOf="@id/etPassword"
+                    app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNewUser"
+            style="@style/Text.Basic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:gravity="end"
+            android:text="@string/new_user"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvSignup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignup"
+            style="@style/Text.PoppinMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:onClick="@{clickListener::onSignupClicked}"
+            android:text="@string/sign_up"
+            android:textColor="@color/txt_blue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNewUser" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

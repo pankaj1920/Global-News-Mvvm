@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.20833333333333334" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_btn.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_card_login.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_circle.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_edit_text.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_line.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_primary_stroke.xml" value="0.1435" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_rounded_corner.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/bg_spinner.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/ic_cursor.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/ic_password_off.xml" value="0.1085" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/ic_place_holder.xml" value="0.121" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/drawable/ic_share.xml" value="0.1435" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/font/abel.xml" value="0.20092592592592592" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/activity_authentaion.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/activity_dashboard.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/activity_launcher.xml" value="0.12" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/activity_main.xml" value="0.1953125" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/activity_no_internet.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/error_layout.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/fragment_admin_all_news.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/fragment_create_news.xml" value="0.22" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/fragment_data_stats.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/fragment_register.xml" value="0.2" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/inflate_admin_all_news.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/inflate_admin_news_item.xml" value="0.33" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/inflate_data_stats.xml" value="0.209375" />
+        <entry key="..\:/Android Studio/B2B/app/src/main/res/layout/loader.xml" value="0.209375" />
+        <entry key="..\:/Pankaj/Android/GlobalNews/app/src/main/res/layout/fragment_login.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable/bg_btn.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_line.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_primary_stroke.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_cursor.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_minimise.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_place_holder.xml" value="0.1" />
+        <entry key="app/src/main/res/font/abel.xml" value="0.1648148148148148" />
+        <entry key="app/src/main/res/layout/activity_authentaion.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_launcher.xml" value="0.384765625" />
+        <entry key="app/src/main/res/layout/error_layout.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/fragment_admin_all_news.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/fragment_create_news.xml" value="0.1824074074074074" />
+        <entry key="app/src/main/res/layout/fragment_data_stats.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18333333333333332" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1824074074074074" />
+        <entry key="app/src/main/res/layout/inflate_admin_news_item.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/loader.xml" value="0.19739583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
